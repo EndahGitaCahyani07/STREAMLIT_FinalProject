@@ -611,13 +611,3 @@ if selected == 'AQI Category Prediction':
 
 
 #=======================================================================================================================================
-
-
-
-
-
-
-
-
-
-# st.title('AQI Category Prediction using ML (Classification)')
