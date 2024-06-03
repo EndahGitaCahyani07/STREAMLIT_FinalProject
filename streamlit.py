@@ -15,6 +15,13 @@ import plotly.graph_objects as go
 
 theme_plotly=None
 
+# Set page configuration
+st.set_page_config(
+    page_title="DS FinPro - HelloWorld.ipynb team",
+    layout="wide",
+    page_icon="📊"
+)
+
 # model
 global_model = pickle.load(open('Predict Global Air Pollution modelling.sav','rb'))
 
