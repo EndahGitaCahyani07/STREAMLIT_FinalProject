@@ -415,7 +415,7 @@ if selected == 'Visualization':
               top_10_countries = top_10_countries.sort_values(by='AQI Value', ascending=True)
 
               # Membuat plot menggunakan plotly express
-              fig = px.bar(top_10_countries, x='AQI Value', y='Country', orientation='h', text='AQI Value', title='Top 10 Countries with Highest AQI Value')
+              fig = px.bar(top_10_countries, x='AQI Value', y='Country', orientation='h', text='AQI Value')
               fig.update_traces(marker_color='brown', textposition='inside')
               fig.update_layout(xaxis_title='AQI Value', yaxis_title='Country')
               st.plotly_chart(fig)
@@ -437,7 +437,7 @@ if selected == 'Visualization':
               top_10_countries = top_10_countries.sort_values(by='AQI Value', ascending=True)
 
               # Membuat plot menggunakan plotly express
-              fig = px.bar(top_10_countries, x='AQI Value', y='Country', orientation='h', text='AQI Value', title='Top 10 Countries with Lowest AQI Value')
+              fig = px.bar(top_10_countries, x='AQI Value', y='Country', orientation='h', text='AQI Value')
               fig.update_traces(marker_color='navy', textposition='inside')
               fig.update_layout(xaxis_title='AQI Value', yaxis_title='Country')
               st.plotly_chart(fig)
@@ -456,7 +456,7 @@ if selected == 'Visualization':
               top_10_countries = top_10_countries.sort_values(by='City', ascending=False)
 
               # Membuat plot menggunakan plotly express
-              fig = px.bar(top_10_countries, x='City', y='Country', orientation='h', text='City', title='Top 10 Countries with the Most Polluted Cities')
+              fig = px.bar(top_10_countries, x='City', y='Country', orientation='h', text='City')
               fig.update_traces(marker_color='coral', textposition='inside')
 
               # Memperbarui layout untuk membalikkan urutan sumbu y
@@ -490,7 +490,7 @@ if selected == 'Visualization':
               top_10_clean_countries = top_10_clean_countries.sort_values(by='Number of Clean Cities', ascending=False)
 
               # Membuat plot menggunakan plotly express
-              fig_clean = px.bar(top_10_clean_countries, x='Number of Clean Cities', y='Country', orientation='h', text='Number of Clean Cities', title='Top 10 Countries with the Most Clean Cities')
+              fig_clean = px.bar(top_10_clean_countries, x='Number of Clean Cities', y='Country', orientation='h', text='Number of Clean Cities')
               fig_clean.update_traces(marker_color='lightsteelblue', textposition='inside')
 
               # Memperbarui layout untuk membalikkan urutan sumbu y
