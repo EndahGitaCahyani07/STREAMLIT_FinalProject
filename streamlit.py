@@ -457,7 +457,7 @@ if selected == 'Visualization':
 
               # Membuat plot menggunakan plotly express
               fig = px.bar(top_10_countries, x='City', y='Country', orientation='h', text='City')
-              fig.update_traces(marker_color='coral', textposition='inside')
+              fig.update_traces(marker_color='mediumseagreen', textposition='inside')
 
               # Memperbarui layout untuk membalikkan urutan sumbu y
               fig.update_layout(
